@@ -14,7 +14,7 @@ Este proyecto fue generado con la version 15.2.5 de Angular
 
 <br>
 
-[![Alt text]()](https://www.youtube.com/watch?v=AIVoEF_79Us)
+Video demostracion de la aplicacion : https://www.youtube.com/watch?v=AIVoEF_79Us
 
 ## Clonar proyecto
 ```$
