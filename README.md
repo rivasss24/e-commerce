@@ -1,6 +1,9 @@
 # E commerce 
 Proyecto e-commerce hecho en Angular
 
+## Deploy
+En el siguiente link podras probar el proyecto : https://e-commerce-fd214.web.app/
+
 ## Consideraciones 
 Este proyecto fue generado con la version 15.2.5 de Angular
 
