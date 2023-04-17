@@ -1,27 +1,33 @@
-# ECommerce
+# E commerce 
+Proyecto e-commerce hecho en Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+## Consideraciones 
+Este proyecto fue generado con la version 15.2.5 de Angular
 
-## Development server
+##Información del proyecto 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![e-commerce-1](https://user-images.githubusercontent.com/80996376/232508016-d456b705-0289-4e2c-9bf3-b3e052e7cad8.png)
 
-## Code scaffolding
+<br />
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![e-commerce-2](https://user-images.githubusercontent.com/80996376/232508058-2f17c6ec-892d-4e3b-a192-b7b9490828de.png)
 
-## Build
+<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[![Alt text](https://img.youtube.com/vi/UEA0lt5D2z4/0.jpg)](https://www.youtube.com/watch?v=AIVoEF_79Us)
 
-## Running unit tests
+## Clone
+```$
+https://github.com/rivasss24/e-commerce.git &&
+cd e-commerce
+```
+## Install dependencies
+```$
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Run
+```$
+ng serve
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
