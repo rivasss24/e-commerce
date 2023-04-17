@@ -17,6 +17,9 @@ export class AllProductsComponent {
   categories: Category[] = [];
 
   ngOnInit(): void{
+
+    window.scroll(0,0);
+
     this.service.getAllproducts().subscribe( data => {
       this.allProducts = data;
     });

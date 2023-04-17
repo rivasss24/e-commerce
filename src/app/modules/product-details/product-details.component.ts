@@ -25,6 +25,8 @@ export class ProductDetailsComponent {
 
   ngOnInit():void {
 
+    window.scroll(0,0);
+
     this.route.paramMap.subscribe( (paramMap:any) => {
     const { id } = paramMap.params;
       console.log(typeof(id));

@@ -3,13 +3,11 @@
         <h1>Todos los productos</h1>
     </div>
     <section class="all-products" *ngIf="allProducts">
-            <app-product-card [product]="allProducts"
-            *ngFor="let allProducts of allProducts" 
-            [lazy]="true"
-            [routerLink]="['/','product-details', allProducts.id]"
-            ></app-product-card>
-    </section>
-    <section *ngIf="!allProducts" class="loading">
-        
+        <app-product-card [product]="product"
+        *ngFor="let product of allProducts"
+        [lazy]="true"
+        [routerLink]="['/','product-details', product.id]"
+        class="product"
+        ></app-product-card>
     </section>
 </main>

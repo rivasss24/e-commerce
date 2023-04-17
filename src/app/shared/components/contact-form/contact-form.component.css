@@ -148,7 +148,7 @@ button{
     width: 120px;
     height: 70px;
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 50px 50px 50px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +156,11 @@ button{
     font-size: 25px;
     text-decoration: none;
     color: black;
+}
+
+button:hover{
+    background-color: #e3d533;
+    cursor: pointer;
 }
 
 .names{

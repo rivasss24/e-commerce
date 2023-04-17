@@ -10,6 +10,11 @@ export class ProductCardComponent {
   @Input() product !: Product
 
   @Input() lazy : boolean = false;
+
+  constructor() {
+    console.log("hola")
+    console.log( this.product );
+  }
   
   /*
   constructor() { 

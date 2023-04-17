@@ -3,14 +3,34 @@
 
     <section class="about">
             <div>
-                <h1>Encuentra todo lo que necesitas con E commerce</h1>
-                <p>Simplifica tus compras de productos y refacciones un solo lugar.</p>
+                <h1>Encuentra todo lo que necesitas</h1>
+                <p>Simplifica tus compras de productos y refacciones en un solo lugar.</p>
                 <a href="#product-carousel-section">Nuestros productos</a>
             </div>
             <img src="../../../assets/fontanero-que-senala-lateral.jpg">
     </section>
 
+    <section class="contact-info">
+        <div class="information">
+                <div>
+                    <h2>¿Cúal es nuestra misión?</h2>
+                    <p>
+                        Fundada en el 2018 con la intención de ofrecer los mejores productos al alcance de tu domicilio. Queremos brindar a nuestra clientela un amplio catálogo de productos al mejor precio del mercado.
+                    </p>
+                </div>
+                
+        </div>
+        <div class="location">
+            <!--<app-loading *ngIf="!isUserLocationReady; else mapReady"></app-loading>-->
+            <!-- #mapReady: nombre de la referencia local -->
+            
+                <p>¿Dónde estamos ubicados?</p>
 
+                <app-map-view></app-map-view>
+
+
+        </div>
+    </section>
 
     <section class="product-carousel-section" id="product-carousel-section">
         
@@ -22,27 +42,14 @@
     
     </section>
 
-    <section class="contact-info">
-        <div class="information">
-            
-        </div>
-        <div class="location">
-           <!--  <google-map height="350px" width="550px" [zoom]="20"></google-map>-->
-            <app-loading *ngIf="!isUserLocationReady; else mapReady"></app-loading>
-            <!-- #mapReady: nombre de la referencia local -->
-            <ng-template #mapReady>
 
-                <p>¿Donde estamos hubicados?</p>
-
-                <app-map-view></app-map-view>
-                
-            </ng-template>
-
-        </div>
-    </section>
 
     <section class="contact-form">
+
+        <h2>Contáctanos</h2>
+
         <app-contact-form></app-contact-form>
+
     </section>
 
 </main>

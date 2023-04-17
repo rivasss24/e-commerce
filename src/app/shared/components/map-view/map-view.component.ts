@@ -15,11 +15,13 @@ export class MapViewComponent implements AfterViewInit{
                                      //{lat: 24, lng: 12};
   center: google.maps.LatLngLiteral = { lat: 10.693981 , lng: -71.636693 }
   
-  zoom = 16;
+  zoom = 17;
   
   circleCenter: google.maps.LatLngLiteral = this.eCommerceLocation
   
   radius = 30;
+
+
 
   ngAfterViewInit():void{
     console.log( this.placesService.getUserLocation() );

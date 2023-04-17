@@ -5,7 +5,7 @@ footer{
     height: auto;
     background-color: rgb(200, 200, 199);
     padding: 10px 0 20px 0;
-
+    margin-top: auto;
 }
 
 footer section{
@@ -30,7 +30,7 @@ footer section{
 }
 
 .left-info li{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 footer  ul{
@@ -41,6 +41,7 @@ footer  ul{
 }
 
 .left a{
+    margin-left: 10px;
     text-decoration: none;
     color: var(--just-white);
 }

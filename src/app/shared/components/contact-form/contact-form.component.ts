@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, FormArray } from '@angular/forms';
 
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
@@ -47,12 +48,19 @@ export class ContactFormComponent implements OnInit{
   get email() { return this.contactForm.get("email") }
 
   receiveData(contenido:HTMLElement){
-    //alert("data recivida");
-    /*
-    if (this.contactForm.valid) {
-      alert(JSON.stringify({}));
+
+  const { name, lastname, email } = this.contactForm.controls;
+
+  if(!this.contactForm.invalid){
+    const data = {
+      name: name.value,
+      lastname: lastname.value,
+      email: email.value,
+      contenido: contenido.innerHTML
+     }
+     alert(`Se enviaran los siguientes datos: ${JSON.stringify(data)}`);
+     this.contactForm.reset();
+     contenido.innerHTML = "";
     }
-    */
-    console.log(contenido);
   }
 }
