@@ -1,0 +1,8 @@
+.loading-map{
+    background-color: rgba( 0, 0, 0, 0.8 );
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}

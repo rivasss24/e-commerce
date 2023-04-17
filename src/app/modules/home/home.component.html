@@ -1,0 +1,48 @@
+
+<main>
+
+    <section class="about">
+            <div>
+                <h1>Encuentra todo lo que necesitas con E commerce</h1>
+                <p>Simplifica tus compras de productos y refacciones un solo lugar.</p>
+                <a href="#product-carousel-section">Nuestros productos</a>
+            </div>
+            <img src="../../../assets/fontanero-que-senala-lateral.jpg">
+    </section>
+
+
+
+    <section class="product-carousel-section" id="product-carousel-section">
+        
+        <app-products-carousel [product]="product"></app-products-carousel>
+        
+        <div class="link-container">
+            <a [routerLink]="['/', 'all-products']" >Todos los productos</a>
+        </div>
+    
+    </section>
+
+    <section class="contact-info">
+        <div class="information">
+            
+        </div>
+        <div class="location">
+           <!--  <google-map height="350px" width="550px" [zoom]="20"></google-map>-->
+            <app-loading *ngIf="!isUserLocationReady; else mapReady"></app-loading>
+            <!-- #mapReady: nombre de la referencia local -->
+            <ng-template #mapReady>
+
+                <p>¿Donde estamos hubicados?</p>
+
+                <app-map-view></app-map-view>
+                
+            </ng-template>
+
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <app-contact-form></app-contact-form>
+    </section>
+
+</main>

@@ -1,0 +1,31 @@
+<section class="product-section">
+    <div class="product-container">
+        <!--<app-product-images [images]="product.images"></app-product-images> -->
+        <div class="first">
+
+            <app-images [images]="product.images" class="images" (changeImage)="indice = $event"></app-images>
+
+            <div class="image-container">
+                <img [src]="product.images[indice]">
+            </div>
+
+        </div>
+
+        <div class="second">
+            <div class="info-container">
+                <p class="title">{{product.title}}</p>
+                <div class="price-container">
+                    <h2>U$S {{product.price}}</h2>
+                    <p>Bs.{{priceBs}}</p>
+                </div>
+
+                <p class="description">{{product.description}}.</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<section class="product-carousel-section">
+    <h2>Mas productos de la categoria <span>{{product.category.name}}</span>:</h2>
+    <app-products-carousel [product]="productsByCategory"></app-products-carousel>
+</section>

@@ -1,0 +1,14 @@
+
+<div class="product-container" *ngIf="product" >
+    <div class="image-container">
+        <!-- <img src={{product.image}} alt=""/> -->
+        <img [src]="product.images[0]" [alt]="product.title" *ngIf="!lazy"/>
+        <img [ngSrc]="product.images[0]" width="100" height="100" *ngIf="lazy">
+    </div>
+    <h2>${{ product.price }}</h2>
+    <p class="product-name">{{ product.title }}</p>
+</div>
+
+<div *ngIf="!product">
+    <h2>No hay producto.</h2>
+</div>

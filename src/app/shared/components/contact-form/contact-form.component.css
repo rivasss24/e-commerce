@@ -1,0 +1,201 @@
+
+.add-product-container{
+    /*display: grid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.add-product .off{
+    display: none;
+}
+
+
+.add-product{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 668px;
+    height: auto;
+    background-color: rgb(205, 201, 197);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 25px 0 25px 0;
+}
+
+
+.add-product_grup{
+    
+    margin-bottom: 5px;
+}
+
+.add-product_grup label{
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#grupo_categoria-cantidad{
+    display: flex;
+}
+
+.add-product_grup_select{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.add-product_grup_cantidad{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+#cantidad{
+    width: 80%;
+}
+
+.add-product_grup input{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 30px;
+    padding: 0 40px 0 10px;
+    transition: 0.2s ease all;
+}
+
+.add-product_grup input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.add-product_grup input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.add-product_grup input:focus{
+    outline: 3px solid rgba(47, 125, 235, 0.652);
+}
+
+.add-product_grup p{
+    font-family: 5px;
+    margin-bottom: 0;
+    color: rgb(207, 16, 16);
+}
+
+.add-product_error-activo{
+    display: block;
+}
+
+.add-product_error-mensage{
+    font-family: 5px;
+    font-weight: 500;
+    background-color: rgb(187, 22, 55);
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    transition: 1s ease all
+}
+
+/* clases incorrectas*/
+.add-product_grup-incorrecto{
+    margin-bottom: 5px;
+}
+
+.add-product_grup-incorrecto input{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 40px 0 10px;
+    transition: 0.2s ease all;
+    color: rgb(187, 22, 55);
+
+}
+
+.add-product_grup-incorrecto input:focus{
+    outline: 3px solid rgb(187, 22, 55);
+}
+
+.add-product_grup-incorrecto label{
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(187, 22, 55);
+}
+
+/*buton*/
+
+button{
+    margin: auto;
+    margin-top: 10px;
+    background-color: #FFF159;
+    font-weight: 500;
+    padding: 20px;
+    width: 120px;
+    height: 70px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.names .add-product_grup{
+    width: 49%;
+}
+
+.add-product_grup .content-editable{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 250px;
+    line-height: 30px;
+    padding: 0 40px 0 10px;
+    transition: 0.2s ease all;
+}
+
+
+.add-product_grup .content-editable[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.add-product_grup .content-editable[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.add-product_grup .content-editable:focus{
+    outline: 3px solid rgba(47, 125, 235, 0.652);
+}
+
+.content-editable{
+    width: 90%;
+    height: 100%;
+    resize: none;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+

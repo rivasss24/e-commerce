@@ -1,0 +1,70 @@
+
+.catalogo{
+    width: 100%;
+    height: 440px;
+    position: relative;
+    /*background-color: blue;*/
+}
+
+.catalogo article{
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.catalogo article::-webkit-scrollbar {
+    display: none;
+}
+
+.catalogo article:hover::-webkit-scrollbar {
+    display: none
+}
+/*
+.catalogo article::-webkit-scrollbar-thumb {
+   background-color: #09C;
+}*/
+
+.icon-right{
+    color: #4590F7;
+    position: absolute;
+    top: 200px;
+    right: 5px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.icon-left{
+    color: #4590F7;
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    z-index: 20;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.icon svg{
+    width: 80px;
+    height: 80px; 
+}
+
+.icon:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.637);
+    color: #458ff789;
+    user-select: none;
+}
+

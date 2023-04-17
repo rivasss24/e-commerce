@@ -1,0 +1,28 @@
+.images-container{
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+.images-container img{
+    margin-bottom: 15px;
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2.5px #bebfc2;
+    
+}
+
+.images-container img:hover{
+    cursor:pointer;
+    box-shadow: 0 0 0 2.5px #4590F7;
+}
+

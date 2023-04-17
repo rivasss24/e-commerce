@@ -1,0 +1,52 @@
+<div class="add-product-container"> 
+    <form class="add-product" [formGroup]="contactForm"> 
+        <div class="names">
+            <div class="add-product_grup">
+                <label>Nombre</label>
+
+                <div class="add-product_input">
+                    <input type="text" formControlName="name" placeholder="tu nombre" autocomplete="off">
+                </div>
+                <p class="add-product_error" *ngIf="name?.invalid && ( name?.dirty || name?.touched )">Longitud entre 2 a 15 caracteres</p>
+            </div>
+
+
+            <div class="add-product_grup ">
+                <label>Apellido</label>
+                <div class="add-product_input">
+                    <input type="text" formControlName="lastname" placeholder="tu apellido" autocomplete="off">
+                </div>
+                <p class="add-product_error" *ngIf="lastname?.invalid && ( lastname?.dirty || lastname?.touched )">Longitud entre 2 a 15 caracteres</p>
+            </div>
+        </div>
+
+        <div class="add-product_grup">
+            <label>Correo</label>
+            <div class="add-product_input">
+                <input type="email" formControlName="email" placeholder="tu correo" autocomplete="off">
+            </div>
+            <p class="add-product_error" *ngIf="email?.invalid && ( email?.dirty || email?.touched )">Correo invalido</p>
+        </div>
+
+        <div class="add-product_grup">
+            <label>Cuentanos:</label>
+            <div class="add-product_input">
+                <div class="content-editable" contentEditable="true" #contentEditable></div>
+            </div>
+        </div>
+
+        <!--
+        <p class="add-product_error-mensage" 
+        id="error-message"
+        style="display: none;"
+        >
+        DEBE RELLENAR CORRECTAMENTE TODOS LOS CAMPOS
+        </p> -->
+        
+        
+        <button (click)="receiveData(contentEditable)">
+            Enviar
+        </button>  
+        
+    </form>
+</div>

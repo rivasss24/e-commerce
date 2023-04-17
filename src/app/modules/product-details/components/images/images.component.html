@@ -1,0 +1,4 @@
+<p>otras imagenes</p>
+<div class="images-container"*ngFor="let image of images; let indice = index">
+        <img [src]="image"  (pointerenter)="pointerEnter(indice)">
+</div>

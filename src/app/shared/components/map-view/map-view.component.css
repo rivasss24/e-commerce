@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div h2{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.map{
+    border-radius: 10px;
+}

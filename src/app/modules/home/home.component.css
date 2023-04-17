@@ -1,0 +1,119 @@
+
+main{
+    height: auto;
+   /*overflow: hidden;*/
+}
+/*-----------   ABOUT   -----------*/
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about div{
+    padding-left: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about div h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.about div p{
+    font-size: 20px;
+    text-align: center; 
+}
+
+.about div a{
+    background-color: #FFF159;
+    font-weight: 500;
+    padding: 20px;
+    width: auto;
+    height: 80px;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.about div a:hover{
+    background-color: #e3d533;
+    cursor: pointer;
+}
+
+.about img{
+    width: 50%;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+
+/*-----------CONTAC INFO-----------*/
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    padding-left: 20px;
+}
+
+.information{
+    display:block;
+    width: 50%;
+    /*background-color: rgb(14, 131, 90);*/
+}
+
+.location{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    /*background-color: brown;*/
+}
+
+.location p{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/*-----------CATALOGO-----------*/
+
+.link-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product-carousel-section a{   
+    color: #4590F7;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    user-select: none;
+}
+
+/*----------- CONTACT FORM-----------*/
+
+.contact-form{
+    background-color: #4590F7;
+    width: 100%;
+    height: auto;
+}
