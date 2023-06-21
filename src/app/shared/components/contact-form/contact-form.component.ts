@@ -57,13 +57,24 @@ export class ContactFormComponent implements OnInit{
 
   receiveData(contenido:HTMLElement){
 
-  const { name, lastname, email } = this.contactForm.controls;
 
+  /*
+     ANTES 
+    const { name, lastname, email } = this.contactForm.controls;
+  
+    name: name.value,
+    lastname: lastname.value,
+    email: email.value,
+  */
+
+  /* AHORA */
+  const { name, lastname, email } = this.contactForm.value;
+    
   if(!this.contactForm.invalid){
     const data = {
-      name: name.value,
-      lastname: lastname.value,
-      email: email.value,
+      name: name,
+      lastname: lastname,
+      email: email,
       contenido: contenido.innerHTML
      }
      alert(`Se enviaran los siguientes datos: ${JSON.stringify(data)}`);
