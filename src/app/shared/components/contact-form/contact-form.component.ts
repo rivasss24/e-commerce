@@ -43,9 +43,17 @@ export class ContactFormComponent implements OnInit{
     )
   }
 
+  /*
+    formValues(name: string){
+      return this.contactForm.get(name);
+    }
+  */
+
   get name() { return this.contactForm.get("name") }
   get lastname() { return this.contactForm.get("lastname") }
   get email() { return this.contactForm.get("email") }
+
+
 
   receiveData(contenido:HTMLElement){
 
